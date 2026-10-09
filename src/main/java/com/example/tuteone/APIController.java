@@ -19,15 +19,4 @@ public class APIController {
     public String goodbye() {
         return "Goodbye from Spring Boot!";
     }
-
-    @GetMapping("/test")
-    public String test(@PathParam("username") String username) {
-        if (username != null && username.equals("John")) {
-            return "Get lost.";
-        } else if (username != null) {
-            return "Welcome.";
-        } else {
-            return "Error";
-        }
-    }
 }
